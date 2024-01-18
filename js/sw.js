@@ -7,6 +7,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   console.log('Service Worker wurde aktiviert.');
   var cacheNew = ['u2'];
+  console.log('Die App wurde updated.');
   event.waitUntil(
     caches.keys().then(function(keyList){
       return Promise.all(keyList.map(function(key){
