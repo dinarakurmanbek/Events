@@ -8,7 +8,6 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 window.addEventListener('appinstalled', (event) => {
   console.log('Die App wurde installiert.');
-  var version = '4';
 });
 
 // Service Worker
@@ -16,6 +15,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('js/sw.js')
     .then((registration) => {
       console.log('Service Worker registriert:', registration);
+       var version = '4';
     })
     .catch((error) => {
       console.error('Fehler bei der Registrierung des Service Workers:', error);
