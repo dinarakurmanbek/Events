@@ -1,5 +1,3 @@
-// app.js
-
 console.log('Die App wurde geladen.');
 
 // Lebenszyklus-Events
