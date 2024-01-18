@@ -8,6 +8,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 window.addEventListener('appinstalled', (event) => {
   console.log('Die App wurde installiert.');
+  var version = '4';
 });
 
 // Service Worker
