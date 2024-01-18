@@ -15,7 +15,8 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('js/sw.js')
     .then((registration) => {
       console.log('Service Worker registriert:', registration);
-       var version = '4';
+     //  var version = '4';
+     // console.log('Die App wurde updated.');
     })
     .catch((error) => {
       console.error('Fehler bei der Registrierung des Service Workers:', error);
